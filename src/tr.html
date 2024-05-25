@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hadith Harmony</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="landingpage.html">Home</a>
+            <a href="tr.html">Read Hadith</a>
+        </nav>
+    </header>
+    
+    <div id="wrapper">
+        <div id="logo-container">
+            <h2 id="logo">&#65021</h2>
+        </div>
+        <div id="content">
+            <p id="header"></p>
+            <p id="hadith-text"></p>
+            <h5 id="book"></h5>
+            <div id="wrapper">
+                <div id="random">
+                    <select id="randomHadith">
+                        <option value="bukhari">Bukhari</option>
+                        <option value="muslim">Muslim</option>
+                        <option value="abudawud">Abu Dawud</option>
+                        <option value="ibnmajah">Ibn Majah</option>
+                        <option value="tirmidhi">Tirmidhi</option>
+                    </select>
+                    <button id="randomBtn">Generate Random</button><br>
+                </div>
+
+                <div id="custom">
+                    <input id="customInput" placeholder="Enter Hadith Number"></input>
+                    <select id="customHadith">
+                        <option value="bukhari">Bukhari</option>
+                        <option value="muslim">Muslim</option>
+                        <option value="abudawud">Abu Dawud</option>
+                        <option value="ibnmajah">Ibn Majah</option>
+                        <option value="tirmidhi">Tirmidhi</option>
+                    </select>
+                </div>
+                <button id="customBtn">Generate Custom</button><br>
+            </div>
+        </div>
+
+        <div id="sound-buttons">
+            <button id="soundOn">Sound On</button>
+            <button id="soundOff">Sound Off</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

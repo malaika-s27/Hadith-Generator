@@ -1,0 +1,149 @@
+
+header {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #e9ecef;
+}
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+}
+.container {
+    padding: 2rem;
+}
+.features, .about, .testimonials, .footer {
+    padding: 4rem 0;
+}
+.features h2, .about h2, .testimonials h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.features .feature, .testimonials .testimonial {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.footer {
+    
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.title-word {
+animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+--color-1: rgb(248, 253, 181);
+--color-2: #3D8DAE;
+--color-3: white;
+}
+
+.title-word-2 {
+--color-1: #DBAD4A;
+--color-2: #ACCFCB;
+--color-3: #17494D;
+}
+
+.title-word-3 {
+--color-1: #ACCFCB;
+--color-2: white;
+--color-3: #ACCFCB;
+}
+
+.title-word-4 {
+--color-1: #3D8DAE;
+--color-2: rgb(248, 253, 181);
+--color-3: white;
+}
+
+@keyframes color-animation {
+0%    {color: var(--color-1)}
+32%   {color: var(--color-1)}
+33%   {color: var(--color-2)}
+65%   {color: var(--color-2)}
+66%   {color: var(--color-3)}
+99%   {color: var(--color-3)}
+100%  {color: var(--color-1)}
+}
+
+.con1 {
+display: grid;
+place-items: center;  
+text-align: center;
+height: 100vh
+}
+
+.title {
+font-family: 'Times New Roman', Times, serif;
+font-weight: 800;
+font-size: 8.5vw;
+text-transform: uppercase;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body,p,h3 {margin:0;}
+body,html {height:100%;}
+body {font-family: 'Times New Roman', Times, serif;}
+
+#conn {
+position:relative;
+margin:0 auto;
+padding:0;
+width:100%;
+height:100%;
+overflow:hidden;
+}
+
+#text {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+text-align:center;
+}
+
+#text img {
+width:100px;
+height:100px;
+border-radius:100%;
+}
+
+#text p,
+#text h3,
+#text a {
+margin:20px 0;
+}
+
+#text h3 {
+font-size:28px;
+}
+
+#text a {
+padding:15px 30px;
+display:inline-block;
+color:white;
+text-decoration:none;
+background:rgba(255,255,255,.2);
+border:2px solid white;
+border-radius:6px;
+transition:.3s ease all;
+}
+
+#text a:hover {
+background:white;
+color:gray;
+}
+
+#parallax {
+z-index:-1;
+position:fixed;
+width:100%;
+height: 100%;
+/* background:url('bg.png') center no-repeat transparent; */
+background:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1652&q=80') center no-repeat transparent;
+background-size:cover;
+}
